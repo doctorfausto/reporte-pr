@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    .w3-tag,
+    .fa {
+      cursor: pointer
+    }
+
+    .w3-tag {
+      height: 15px;
+      width: 15px;
+      padding: 0;
+      margin-top: 6px
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-large w3-light-grey">
+      <div class="w3-col s2">
+        <a href="#" class="w3-button w3-block">Inicio</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#fases" class="w3-button w3-block">Fases del Proyecto</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#servidores" class="w3-button w3-block">Servidores</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#reglas" class="w3-button w3-block">Reglas DO</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#generadores" class="w3-button w3-block">Generadores de Tráfico</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#pruebas" class="w3-button w3-block">Pruebas Internas</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+    <div class="w3-panel w3-center">
+      <h1><b>REPORTE - PRUEBAS DE RED</b></h1>
+      <p>Presentado por: Oscar Altamirano, Manuel Esparza, Diego Garibay y Manuel Valenzuela</p>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="w3-container">
+      <div class="w3-display-container mySlides w3-center">
+        <img src="./diagrama.png" style="width:800px; height:600px">
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          <span class="w3-white w3-padding-large w3-animate-bottom">Diagrama de Servicios</span>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides w3-center">
+        <img src="./diagrama2.png" style="width:800px; height:600px">
+        <div class="w3-display-topleft w3-container w3-padding-32">
+          <span class="w3-white w3-padding-large w3-animate-bottom">Diagrama de Subred</span>
+        </div>
+      </div>
+
+      <!-- Slideshow next/previous buttons -->
+      <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+        <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+        <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+        <div class="w3-center">
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="w3-row w3-container">
+      <div class="w3-center w3-padding-64" id="fases">
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Fases del Proyecto</span>
+      </div>
+      <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+        <h3>Servidores Debian en LAN1 y LAN2</h3>
+        <p>Cada servidor cuenta con una instancia de nginx y bind9, así como 3 honeypots.</p>
+      </div>
+
+      <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+        <h3>Reglas Outbound de Firewall</h3>
+        <p>Se implementaron dos conjuntos de reglas: uno para TCP para los protocolos HTTP y HTTPS, y otro para UDP para
+          los protocolos DNS y NTP.</p>
+      </div>
+
+      <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+        <h3>Generadores de Tráfico</h3>
+        <p>Utilizando hping3, logramos generar tráfico suficiente para hacer un pequeño ataque DoS.</p>
+      </div>
+
+      <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+        <h3>Pruebas internas</h3>
+        <p>Se utilizó hping3 para realizar los ataques DoS y DDoS, y se utilizó Zap y Ettercap para los ataques a
+          servicios web y DNS.</p>
+      </div>
+    </div>
+
+    <div class="w3-display-container" style="display:flex;flex-direction:column;">
+      <div class="w3-row-padding" id="servidores" style="display:flex;flex-direction:row; align-items:center;justify-content:space-around;">
+        <div class="w3-padding-64">
+          <!-- <div class="w3-center w3-padding-64"> -->
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-8">Servidores Debian y Honeypots</span>
+          <p>
+            Para crear los honeypots, nos apoyamos de una herramienta llamada "qhoneypots" que nos permitía<br>
+            crear honeypots para diferentes puertos y protocolos.<br>
+
+            Para la computadora de la izquierda creamos honeypots para los protocolos TELNET, MySQL y Redis,<br>
+            y para la computadora de la derecha creamos honeypots para los protocolos SSH, HTTP y FTP.<br>
+            <br>
+            Configuración:<br>
+            <code>
+              honeypots --setup redis,mysql,telnet<br>
+              telnet localhost  # telnet honeypot<br>
+              mysql -h 127.0.0.1 -u manolo -p  # mysql honeypot<br>
+              redis-cli -u redis://manolo:password@127.0.0.1:6379  # redis honeypot<br>
+            </code>
+          </p>
+        </div>
+        <img src="./telnethp.png" style="width:45%; height:75%">
+      </div>
+
+      <div class="w3-row-padding" id="reglas" style="display:flex;flex-direction:row; align-items:center;justify-content:space-around;">
+        <img src="./do.png" style="width:30%; height:30%">
+        <div class="w3-padding-64" style="text-align:right">
+          <!-- <div class="w3-center w3-padding-64"> -->
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-8">Reglas Outbound de Firewall en
+            DigitalOcean</span>
+          <p>
+            Generamos dos conjuntos de reglas en los dos DOs para tener acceso limitado a Internet:<br>
+            <ul>
+              <li>El primer conjunto de reglas consiste en habilitar HTTP y HTTPS mediante el protocolo TCP</li>
+              <li>El segundo conjunto de reglas consiste en habilitar DNS y NTP mediante el protocolo UDP</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row-padding" id="generadores" style="display:flex;flex-direction:row; align-items:center;justify-content:space-around;">
+        <div class="w3-padding-64">
+          <!-- <div class="w3-center w3-padding-64"> -->
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-8">Generadores de Tráfico</span>
+          <p>
+            Utilizando hping3, generamos una especie de ataque DoS hacía otra computadora<br>
+            dentro de la misma red, notamos una ralentización de su sistema de hasta 1000 ms.<br>
+            <br>
+            Ejemplo:<br>
+            <code>
+              hping3 -S --flood -p 443 -d 1024 -V --faster 10.21.1.15
+            </code>
+          </p>
+        </div>
+        <img src="./ab.png" style="width:25%; height:25%">
+      </div>
+
+      <div class="w3-row-padding" id="pruebas" style="display:flex;flex-direction:row; align-items:center;justify-content:space-around;">
+        <img src="./mitm.png" style="width:35%; height:25%">
+        <div class="w3-padding-64" style="text-align:right">
+          <!-- <div class="w3-center w3-padding-64"> -->
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-8">Pruebas internas</span>
+          <p>
+            <ul>
+              <li><strong>Ataque DoS:</strong> como se mencionó anteriormente, utilizamos hping3 para hacer un ataque DoS.</li>
+              <li><strong>Ataque DDoS:</strong> para el ataque DDoS basta con tener múltiples instancias de hping3 en<br>
+                distintas computadoras, todas atacando a la misma computadora.
+              </li>
+              <li><strong>Ataque a servicios web:</strong> utilizando la herramienta OWASP.</li>
+              <li><strong>Ataque a servicio DNS:</strong> utilizando Ettercap, se realizó un scan de las IPs que se<br>
+                encuentran en la red para posteriormente hacer ARP poisoning e infectar la tabla de<br>
+                resolución del DNS.<br>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row-padding" id="mitm" style="display:flex;flex-direction:row; align-items:center;justify-content:space-around;">
+        <div class="w3-padding-64">
+          <!-- <div class="w3-center w3-padding-64"> -->
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-8">Ataque "Man-in-the-middle"</span>
+          <p>
+            Para hacer el ataque de "man-in-the-middle", utilizamos igualmente Ettercap.<br>
+            Utilizamos ARP Poisoning el cual consiste en modificar la tabla ARP para<br>
+            hacer creer a una computadora que el "atacante" en realidad es el router.<br>
+            Además, nos apoyamos de Wireshark para analizar los paquetes.<br>
+          </p>
+        </div>
+        <img src="./mitm.jpg" style="width:25%; height:25%">
+      </div>
+
+      <!-- Grid -->
+      <!-- <div class="w3-row-padding" id="about">
+        <div class="w3-center w3-padding-64">
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+        </div>
+
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-card-4">
+
+    </div>
+            <img src="/hacker.jpg" alt="Oscar" style="width:100%">
+            <div class="w3-container">
+              <h3>Oscar "Oscar" Altamirano</h3>
+              <p class="w3-opacity">CEO & Founder</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-card-4">
+            <img src="/hacker.jpg" alt="Manolo" style="width:100%">
+            <div class="w3-container">
+              <h3>Manuel "Manolo" Esparza</h3>
+              <p class="w3-opacity">CEO & Founder</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-card-4">
+            <img src="/w3images/team2.jpg" alt="DAGZ" style="width:100%">
+            <div class="w3-container">
+              <h3>Diego "DAGZ" Garibay</h3>
+              <p class="w3-opacity">Lead Developer</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-quarter w3-margin-bottom">
+          <div class="w3-card-4">
+            <img src="/w3images/team3.jpg" alt="Fausto" style="width:100%">
+            <div class="w3-container">
+              <h3>Manuel "Fausto" Valenzuela</h3>
+              <p class="w3-opacity">Designer</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+      <h4>¡Gracias por su atención! :)</h4>
+      <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Volver a arriba</a>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+          class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+
+    <script>
+      // Slideshow
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demodots");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length };
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-white";
+      }
+    </script>
+
+</body>
+
+</html>
