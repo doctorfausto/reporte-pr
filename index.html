@@ -217,6 +217,31 @@
         <img src="./mitm.jpg" style="width:25%; height:25%">
       </div>
 
+      <div class="w3-row-padding" id="scan" style="display:flex;flex-direction:row; align-items:center;justify-content:space-around;">
+        <img src="./nmap-logo.jpg" style="width:35%; height:25%">
+        <div class="w3-padding-64" style="text-align:right">
+          <!-- <div class="w3-center w3-padding-64"> -->
+          <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-8">Informes de redes analizadas</span>
+          <p>
+            Utilizando NMAP, se realizó un scan de ambas VLANS para detectar todas las computadoras conectadas<br>
+            así como los puertos abiertos de cada una.<br>
+            Ejemplo:
+            <code>
+              nmap 10.21.1.0/24 # para la VLAN101<br>
+              nmap 10.22.1.0/24 # para la VLAN201<br>
+            </code>
+            <ul>
+              <li>
+                <a href="./lan-izq" download="reporte-vlan101.txt">VLAN101 (izquierda)</a>
+              </li> 
+              <li>
+                <a href="./lan-der" download="reporte-vlan201.txt">VLAN201 (derecha)</a>
+              </li> 
+            </ul>
+          </p>
+        </div>
+      </div>
+
       <!-- Grid -->
       <!-- <div class="w3-row-padding" id="about">
         <div class="w3-center w3-padding-64">

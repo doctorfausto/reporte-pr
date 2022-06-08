@@ -1,0 +1,386 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-06-08 11:47 PDT
+Nmap scan report for 10.22.1.5
+Host is up (0.00082s latency).
+Not shown: 996 filtered ports
+PORT    STATE SERVICE
+53/tcp  open  domain
+80/tcp  open  http
+199/tcp open  smux
+443/tcp open  https
+MAC Address: 08:00:27:35:AB:70 (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.15
+Host is up (0.00065s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 08:00:27:E1:1F:8E (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.17
+Host is up (0.0010s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+199/tcp  open  smux
+443/tcp  open  https
+3128/tcp open  squid-http
+MAC Address: 08:00:27:46:09:CE (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.21
+Host is up (0.00029s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 08:00:27:84:95:BB (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.22
+Host is up (0.00061s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 08:00:27:14:69:DC (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.52
+Host is up (0.00032s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+53/tcp  open  domain
+80/tcp  open  http
+199/tcp open  smux
+MAC Address: 08:00:27:E7:A8:87 (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.63
+Host is up (0.00032s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+53/tcp open  domain
+80/tcp open  http
+MAC Address: 08:00:27:C5:59:93 (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.64
+Host is up (0.0010s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: 08:00:27:1B:98:9C (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.74
+Host is up (0.0010s latency).
+All 1000 scanned ports on 10.22.1.74 are closed
+MAC Address: 08:00:27:BB:0F:22 (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.79
+Host is up (0.0011s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+80/tcp open  http
+MAC Address: 08:00:27:58:6F:6F (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.80
+Host is up (0.0010s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+80/tcp open  http
+MAC Address: 08:00:27:68:D9:FE (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.82
+Host is up (0.00028s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+MAC Address: 08:00:27:A1:BF:0D (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.86
+Host is up (0.00033s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: 08:00:27:1B:98:9C (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.87
+Host is up (0.00064s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+515/tcp  open  printer
+5357/tcp open  wsdapi
+MAC Address: 08:00:27:F1:49:4E (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for 10.22.1.152
+Host is up (0.0015s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:2C:07 (Dell)
+
+Nmap scan report for 10.22.1.153
+Host is up (0.00060s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:2C:62 (Dell)
+
+Nmap scan report for 10.22.1.154
+Host is up (0.00036s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:59:13 (Dell)
+
+Nmap scan report for 10.22.1.155
+Host is up (0.00042s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:2E:50 (Dell)
+
+Nmap scan report for 10.22.1.156
+Host is up (0.00082s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:33:57 (Dell)
+
+Nmap scan report for 10.22.1.157
+Host is up (0.00051s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:2E:80 (Dell)
+
+Nmap scan report for 10.22.1.158
+Host is up (0.00049s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:75:E2 (Dell)
+
+Nmap scan report for 10.22.1.159
+Host is up (0.00059s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:31:C2 (Dell)
+
+Nmap scan report for 10.22.1.160
+Host is up (0.00062s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:5A:BD (Dell)
+
+Nmap scan report for 10.22.1.161
+Host is up (0.00044s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:28:23 (Dell)
+
+Nmap scan report for 10.22.1.181
+Host is up (0.00033s latency).
+All 1000 scanned ports on 10.22.1.181 are filtered
+MAC Address: A4:BB:6D:DB:30:06 (Dell)
+
+Nmap scan report for 10.22.1.182
+Host is up (0.00054s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:7B:F0 (Dell)
+
+Nmap scan report for 10.22.1.183
+Host is up (0.00067s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:5F:5C (Dell)
+
+Nmap scan report for 10.22.1.184
+Host is up (0.00015s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:31:A4 (Dell)
+
+Nmap scan report for 10.22.1.185
+Host is up (0.00066s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:31:43 (Dell)
+
+Nmap scan report for 10.22.1.186
+Host is up (0.00071s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:33:3F (Dell)
+
+Nmap scan report for 10.22.1.187
+Host is up (0.0012s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:30:F4 (Dell)
+
+Nmap scan report for 10.22.1.188
+Host is up (0.0021s latency).
+All 1000 scanned ports on 10.22.1.188 are filtered
+MAC Address: A4:BB:6D:DB:2E:63 (Dell)
+
+Nmap scan report for 10.22.1.189
+Host is up (0.00050s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:31:D9 (Dell)
+
+Nmap scan report for 10.22.1.190
+Host is up (0.00066s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:D3:C4:6B (Dell)
+
+Nmap scan report for 10.22.1.191
+Host is up (0.00066s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:58:7C (Dell)
+
+Nmap scan report for 10.22.1.192
+Host is up (0.00056s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:59:12 (Dell)
+
+Nmap scan report for 10.22.1.193
+Host is up (0.00055s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:31:AE (Dell)
+
+Nmap scan report for 10.22.1.194
+Host is up (0.00067s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:DB:32:2C (Dell)
+
+Nmap scan report for 10.22.1.195
+Host is up (0.0010s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:5C:61 (Dell)
+
+Nmap scan report for 10.22.1.196
+Host is up (0.00063s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: A4:BB:6D:D3:A8:4A (Dell)
+
+Nmap scan report for 10.22.1.197
+Host is up (0.00072s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:D2:68:F3 (Dell)
+
+Nmap scan report for 10.22.1.198
+Host is up (0.00067s latency).
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+MAC Address: A4:BB:6D:DB:31:6F (Dell)
+
+Nmap scan report for 10.22.1.199
+Host is up (0.00044s latency).
+All 1000 scanned ports on 10.22.1.199 are filtered
+MAC Address: A4:BB:6D:DB:47:F0 (Dell)
+
+Nmap scan report for 10.22.1.200
+Host is up (0.00026s latency).
+All 1000 scanned ports on 10.22.1.200 are closed
+MAC Address: 08:00:27:BB:0F:22 (Oracle VirtualBox virtual NIC)
+
+Nmap scan report for orion-der.cetys.net (10.22.1.81)
+Host is up (0.0000020s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+80/tcp open  http
+
+Nmap done: 256 IP addresses (45 hosts up) scanned in 190.92 seconds
